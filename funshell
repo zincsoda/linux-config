@@ -1,0 +1,20 @@
+cat << 'EOF'
+  _____  _    _   _____ _          _ _ 
+ /  ___|| |  | | /  ___| |        | | |
+ \ `--. | |  | | \ `--.| |__   ___| | |
+  `--. \| |/\| |  `--. \ '_ \ / _ \ | |
+ /\__/ /\  /\  / /\__/ / | | |  __/ | |
+ \____/  \/  \/  \____/|_| |_|\___|_|_| v 1.0
+                                                                   
+EOF
+echo -e '\E[37;44m'"\033[1mUser: `whoami` \033[0m"
+builddate=`ls -l /bin/mv | awk {'print $6 $7'}`
+echo "Build Image Date: $builddate"
+echo ""
+
+function countdown 
+{
+ case "$1" in -s) shift;; *) set $(($1 * 60));; esac; local S="          "; for i in $(seq "$1" -1 1); do echo -ne "$S\r $i\r"; sleep 1; done; echo -e "$S\rBOOM!"; 
+}
+
+
