@@ -1,0 +1,8 @@
+[user]
+	name = Steve Walsh
+	email = <email>
+[core]
+	editor = vim
+	pager = more
+[color]
+	ui = true

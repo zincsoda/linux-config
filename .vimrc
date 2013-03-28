@@ -1,0 +1,10 @@
+set syntax=on
+set background=dark
+set ai
+set ts=4
+set shiftwidth=4
+set expandtab
+set cindent
+set nocompatible
+set wrap
+set linebreak
