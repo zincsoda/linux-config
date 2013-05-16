@@ -1,3 +1,7 @@
+# colors
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
 
 # history stuff
 
