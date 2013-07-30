@@ -27,3 +27,6 @@ _bash_history_sync() {
 
 export PROMPT_COMMAND=_bash_history_sync
 
+if [ -f ~/git-completion.bash ]; then
+   . git-completion.bash
+fi
