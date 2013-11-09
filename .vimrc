@@ -1,4 +1,4 @@
-set syntax=on
+syntax on
 set background=dark
 set ai
 set ts=4
